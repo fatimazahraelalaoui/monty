@@ -20,7 +20,7 @@ void print_str(stack_t **stack, __attribute__((unused))unsigned int ln)
 	while (tempo != NULL)
 	{
 		c = tempo->n;
-		if (c <= 0 || c > 127)
+		if (c <= 10 || c > 127)
 			break;
 		printf("%c", c);
 		tempo = tempo->next;
