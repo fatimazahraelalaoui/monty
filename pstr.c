@@ -16,6 +16,7 @@ void print_str(stack_t **stack, __attribute__((unused))unsigned int ln)
 		return;
 	}
 
+	tempo = *stack;
 	while (tempo != NULL)
 	{
 		c = tempo->n;
