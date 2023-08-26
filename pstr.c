@@ -16,11 +16,10 @@ void print_str(stack_t **stack, __attribute__((unused))unsigned int ln)
 		return;
 	}
 
-	tempo = *stack;
 	while (tempo != NULL)
 	{
 		c = tempo->n;
-		if (c <= 10 || c > 127)
+		if (c <= 0 || c > 127)
 			break;
 		printf("%c", c);
 		tempo = tempo->next;
